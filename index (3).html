@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cobalt (Co) — Khám phá nguyên tố 27</title>
+<style>
+:root{--bg:#07111f;--panel:#101f33;--panel2:#142941;--text:#edf5ff;--muted:#a8bbd2;--cyan:#65e5ef;--blue:#6da7ff;--gold:#ffc96b;--pink:#ff8bb7;--line:#28425f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#183c59 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{padding:48px 20px 32px;max-width:1100px;margin:auto}.eyebrow{color:var(--cyan);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}.hero h1{font-size:clamp(2.6rem,6vw,5.2rem);line-height:.98;margin:12px 0 18px;letter-spacing:-.05em}.hero h1 span{color:var(--cyan)}.lead{color:var(--muted);font-size:1.1rem;max-width:650px}.element-card{background:linear-gradient(145deg,#1c4261,#102238);border:1px solid #42708f;border-radius:24px;padding:22px;text-align:center;box-shadow:0 18px 60px #0005}.element-symbol{font-size:6rem;font-weight:900;line-height:1.05;color:#fff;text-shadow:0 0 30px #65e5ef70}.element-card small{color:var(--muted)}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.fact{background:#0716248a;border-radius:12px;padding:10px}.fact b{display:block;color:var(--cyan);font-size:1.1rem}.fact span{font-size:.8rem;color:var(--muted)}
+nav{position:sticky;top:0;z-index:5;background:#07111fe8;backdrop-filter:blur(14px);border-block:1px solid #233b55;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px}nav a{color:var(--muted);text-decoration:none;padding:7px 12px;border-radius:9px;font-size:.9rem}nav a:hover{background:var(--panel2);color:white}
+main{max-width:1100px;padding:0 20px 70px;margin:auto}section{margin-top:38px;scroll-margin-top:85px}.section-head{display:flex;gap:15px;align-items:end;justify-content:space-between;margin-bottom:18px}.section-head h2{font-size:clamp(1.5rem,3vw,2.3rem);margin:0;letter-spacing:-.03em}.section-head p{color:var(--muted);margin:4px 0 0}.tag{color:var(--cyan);font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.panel{background:linear-gradient(145deg,#102239,#0c1a2b);border:1px solid var(--line);border-radius:20px;padding:22px}.video-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.screen{min-height:340px;position:relative;overflow:hidden;border-radius:16px;background:radial-gradient(circle at 50% 45%,#1b5575,#07111f 65%);display:flex;align-items:center;justify-content:center;text-align:center;padding:26px}.screen:before,.screen:after{content:"";position:absolute;border:1px solid #66e5ef42;border-radius:50%;width:260px;height:260px;animation:spin 15s linear infinite}.screen:after{width:190px;height:190px;animation-duration:10s;animation-direction:reverse}.scene-content{position:relative;z-index:1;max-width:450px}.scene-symbol{font-size:5rem;font-weight:900;color:var(--cyan);line-height:1.1;text-shadow:0 0 30px #65e5ef88}.scene-title{font-size:1.55rem;font-weight:800;margin:8px 0}.scene-caption{color:#e3f2ff}.video-controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;align-items:center}.btn{border:0;border-radius:12px;padding:11px 16px;font-weight:800;cursor:pointer;background:var(--cyan);color:#06131e}.btn.secondary{background:#1d344d;color:var(--text);border:1px solid #365471}.btn:hover{filter:brightness(1.1)}.progress{height:7px;background:#253b52;border-radius:10px;overflow:hidden;margin-top:14px}.progress>div{height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--blue));transition:width .2s}.small{font-size:.86rem;color:var(--muted)}.script-list{display:grid;gap:9px;max-height:385px;overflow:auto;padding-right:3px}.script-item{padding:12px;border:1px solid transparent;border-radius:12px;background:#0a1727;cursor:pointer}.script-item.active{border-color:var(--cyan);background:#123048}.script-item b{color:var(--cyan);font-size:.8rem}.script-item p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.use-card{display:flex;gap:14px;align-items:flex-start}.use-icon{font-size:1.8rem;background:#17314a;border-radius:14px;padding:9px;min-width:54px;text-align:center}.use-card h3{margin:0 0 5px}.use-card p{margin:0;color:var(--muted)}.note{border-left:3px solid var(--gold);padding:10px 14px;background:#2a251b;border-radius:0 10px 10px 0;color:#ffe8b7;font-size:.92rem;margin-top:14px}
+.atom-layout{display:grid;grid-template-columns:1fr .8fr;gap:16px;align-items:center}.atom-stage{min-height:390px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle,#123b57,#07111f 70%);border-radius:16px}.nucleus{position:absolute;width:85px;height:85px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#ffb1c9,#f35c8e 48%,#8e2859);box-shadow:0 0 35px #ff649a8a;display:grid;place-items:center;text-align:center;font-weight:900;font-size:.76rem;z-index:2}.orbit{position:absolute;border:1px solid #70e8f27a;border-radius:50%;transform-style:preserve-3d;animation:spin 12s linear infinite}.orbit.o1{width:145px;height:145px}.orbit.o2{width:220px;height:220px;transform:rotateX(70deg);animation-duration:17s}.orbit.o3{width:295px;height:295px;transform:rotateY(70deg);animation-duration:21s}.orbit.o4{width:350px;height:350px;transform:rotateX(68deg) rotateY(20deg);animation-duration:24s}.electron{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan);top:50%;left:50%;transform:translate(-50%,-50%)}.orbit .electron{top:0;left:50%}.atom-legend{display:grid;gap:10px}.shell-row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#0a1727;border-radius:10px;padding:10px 12px}.shell-row span{color:var(--muted)}.shell-row b{color:var(--cyan)}.atom-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.experiment{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.experiment-visual{min-height:260px;background:radial-gradient(circle at center,#163d57,#091421);border-radius:16px;display:grid;place-items:center;position:relative;overflow:hidden}.magnet{width:190px;height:68px;border-radius:10px;display:flex;overflow:hidden;transform:rotate(-12deg);box-shadow:0 14px 24px #0008}.magnet span{flex:1;display:grid;place-items:center;font-size:1.5rem;font-weight:900}.magnet .n{background:#e65c6c;color:#fff}.magnet .s{background:#dce7f3;color:#17283a}.filings{position:absolute;display:flex;gap:7px;flex-wrap:wrap;width:190px;justify-content:center;top:52%;left:50%;transform:translate(-50%,5px)}.filings i{width:3px;height:23px;background:#c3d6e6;border-radius:3px;transform:rotate(25deg);box-shadow:0 0 4px #fff6}.steps{padding-left:20px}.steps li{margin:8px 0;color:var(--muted)}.steps strong{color:var(--text)}.quiz-question{font-size:1.2rem;font-weight:800;margin:0 0 15px}.answers{display:grid;gap:9px}.answer{padding:12px 14px;border:1px solid #2c4662;border-radius:12px;background:#0a1727;color:var(--text);text-align:left;cursor:pointer}.answer:hover{border-color:var(--cyan)}.answer.correct{border-color:#58d69b;background:#103528}.answer.wrong{border-color:#ff8a8a;background:#3a1d2a}.feedback{margin-top:13px;padding:12px;border-radius:10px;display:none}.feedback.show{display:block}.quiz-footer{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:15px;flex-wrap:wrap}.score{color:var(--cyan);font-weight:800}footer{border-top:1px solid var(--line);padding:25px 20px;text-align:center;color:var(--muted);font-size:.85rem}
+@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:760px){.hero,.video-layout,.grid-2,.atom-layout,.experiment{grid-template-columns:1fr}.hero{gap:20px}.element-card{max-width:360px}.screen{min-height:290px}.atom-stage{min-height:350px}.orbit.o4{width:320px;height:320px}.facts{grid-template-columns:repeat(3,1fr)}.section-head{align-items:start;flex-direction:column}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Hồ sơ nguyên tố · Bảng tuần hoàn</div>
+  <div class="hero">
+    <div>
+      <h1>Khám phá <span>Cobalt</span></h1>
+      <p class="lead">Một kim loại chuyển tiếp màu bạc ánh xanh, góp mặt trong pin sạc, hợp kim chịu nhiệt, sắc tố xanh cobalt và cả vitamin B₁₂.</p>
+    </div>
+    <div class="element-card" aria-label="Thông tin nguyên tố Cobalt">
+      <div style="display:flex;justify-content:space-between"><b>27</b><small>58.933 u</small></div>
+      <div class="element-symbol">Co</div>
+      <b>Cobalt · Coban</b><br><small>Nhóm 9 · Chu kì 4 · Kim loại chuyển tiếp</small>
+      <div class="facts"><div class="fact"><b>1495°C</b><span>Nhiệt độ nóng chảy</span></div><div class="fact"><b>Ferromagnetic</b><span>Có tính sắt từ</span></div><div class="fact"><b>[Ar] 3d⁷ 4s²</b><span>Cấu hình e⁻</span></div></div>
+    </div>
+  </div>
+</header>
+<nav aria-label="Điều hướng"><a href="#video">Video 75 giây</a><a href="#ungdung">Ứng dụng</a><a href="#nguyentu">Nguyên tử 3D</a><a href="#thinghiem">Thí nghiệm</a><a href="#quiz">Đố vui</a></nav>
+<main>
+<section id="video">
+  <div class="section-head"><div><div class="tag">01 / Xem & nghe</div><h2>Video khám phá trong 75 giây</h2><p>Hoạt cảnh minh họa có phụ đề và đọc lời dẫn bằng giọng đọc của trình duyệt.</p></div><span class="small">~ 1 phút 15 giây</span></div>
+  <div class="panel">
+    <div class="video-layout">
+      <div>
+        <div class="screen" aria-live="polite"><div class="scene-content"><div class="scene-symbol" id="sceneSymbol">Co</div><div class="scene-title" id="sceneTitle">Xin chào, Cobalt!</div><p class="scene-caption" id="sceneCaption">Nguyên tố số 27 — kim loại chuyển tiếp màu bạc ánh xanh.</p></div></div>
+        <div class="progress"><div id="progressBar"></div></div>
+        <div class="video-controls"><button class="btn" id="playBtn">▶ Phát video</button><button class="btn secondary" id="restartBtn">↺ Xem lại</button><button class="btn secondary" id="voiceBtn">🔊 Bật đọc lời dẫn</button><span class="small" id="timeLabel">00:00 / 01:15</span></div>
+        <p class="small">Lưu ý: đây là video dạng hoạt cảnh chạy ngay trong trang, không phải tệp phim tải sẵn. Tính năng đọc lời dẫn phụ thuộc trình duyệt và cài đặt âm thanh.</p>
+      </div>
+      <div class="script-list" id="scriptList" aria-label="Các cảnh video"></div>
+    </div>
+  </div>
+</section>
+<section id="ungdung">
+  <div class="section-head"><div><div class="tag">02 / Khoa học đời sống</div><h2>Cobalt được dùng để làm gì?</h2><p>Giá trị của cobalt đến từ tính từ, độ bền ở nhiệt độ cao và vai trò sinh học đặc biệt.</p></div></div>
+  <div class="grid-2">
+    <div class="panel use-card"><div class="use-icon">🩺</div><div><h3>Y tế & sức khỏe</h3><p><b>Vitamin B₁₂:</b> cobalt là nguyên tử trung tâm trong phân tử vitamin B₁₂, cần thiết cho quá trình tạo hồng cầu và hoạt động của hệ thần kinh. Vitamin B₁₂ được dùng để phòng hoặc điều trị thiếu hụt khi có chỉ định.</p><p style="margin-top:9px"><b>Xạ trị:</b> đồng vị cobalt-60 phát ra tia gamma, từng và vẫn được dùng trong một số thiết bị chiếu xạ và khử khuẩn chuyên dụng.</p></div></div>
+    <div class="panel use-card"><div class="use-icon">🏭</div><div><h3>Công nghiệp</h3><p><b>Pin sạc:</b> một số pin lithium-ion dùng hợp chất cobalt ở cực dương để hỗ trợ độ ổn định và mật độ năng lượng.</p><p style="margin-top:9px"><b>Hợp kim & nam châm:</b> cobalt giúp tạo hợp kim chịu nhiệt, chống mài mòn và vật liệu từ. Oxit cobalt còn tạo sắc xanh đặc trưng cho thủy tinh, men gốm và pigment.</p></div></div>
+  </div>
+  <div class="note"><b>An toàn:</b> cobalt kim loại và nhiều hợp chất cobalt có thể gây hại nếu hít bụi, nuốt phải hoặc tiếp xúc không đúng cách. Không tự xử lý muối cobalt, bột kim loại hay nguồn phóng xạ. Cobalt trong vitamin B₁₂ không có nghĩa là nên tự bổ sung cobalt riêng.</div>
+</section>
+<section id="nguyentu">
+  <div class="section-head"><div><div class="tag">03 / Cấu tạo nguyên tử</div><h2>Mô hình nguyên tử 3D</h2><p>Xoay các lớp electron để hình dung cấu trúc; đây là mô hình Bohr minh họa, không phải hình dạng quỹ đạo lượng tử thực.</p></div></div>
+  <div class="panel atom-layout">
+    <div class="atom-stage" id="atomStage" aria-label="Mô hình nguyên tử cobalt với hạt nhân và bốn lớp electron">
+      <div class="orbit o1"><i class="electron"></i><i class="electron" style="top:100%;left:50%"></i></div>
+      <div class="orbit o2"><i class="electron" style="top:50%;left:0"></i><i class="electron" style="top:50%;left:100%"></i><i class="electron" style="top:0;left:50%"></i></div>
+      <div class="orbit o3"><i class="electron" style="top:30%;left:0"></i><i class="electron" style="top:70%;left:100%"></i><i class="electron" style="top:0;left:50%"></i></div>
+      <div class="orbit o4"><i class="electron" style="top:50%;left:0"></i><i class="electron" style="top:50%;left:100%"></i></div>
+      <div class="nucleus">27 p⁺<br>32 n⁰*</div>
+    </div>
+    <div>
+      <h3>Thông tin hạt cơ bản</h3>
+      <div class="atom-legend">
+        <div class="shell-row"><span>Số hiệu nguyên tử</span><b>27 proton</b></div>
+        <div class="shell-row"><span>Nguyên tử trung hòa</span><b>27 electron</b></div>
+        <div class="shell-row"><span>Phân bố theo lớp (mô hình)</span><b>2 · 8 · 15 · 2</b></div>
+        <div class="shell-row"><span>Cấu hình electron</span><b>[Ar] 3d⁷ 4s²</b></div>
+        <div class="shell-row"><span>* Đồng vị phổ biến</span><b>Co-59: 32 neutron</b></div>
+      </div>
+      <p class="small">Các chấm electron trong hoạt cảnh chỉ nhằm minh họa. Phân bố lớp 2–8–15–2 và cấu hình phân lớp [Ar] 3d⁷ 4s² mô tả cùng 27 electron theo hai cách khác nhau.</p>
+      <div class="atom-actions"><button class="btn" id="spinBtn">⟳ Tăng tốc xoay</button><button class="btn secondary" id="pauseAtomBtn">Ⅱ Tạm dừng</button></div>
+    </div>
+  </div>
+</section>
+<section id="thinghiem">
+  <div class="section-head"><div><div class="tag">04 / Quan sát thực tế</div><h2>Thí nghiệm: từ tính của vật liệu</h2><p>Quan sát an toàn tại lớp học để kết nối tính chất từ với ứng dụng công nghiệp của cobalt.</p></div></div>
+  <div class="panel experiment">
+    <div class="experiment-visual"><div class="magnet"><span class="n">N</span><span class="s">S</span></div><div class="filings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div><h3>Chuẩn bị</h3><ul class="steps"><li><strong>Dụng cụ:</strong> một nam châm thương mại còn nguyên vỏ, kẹp giấy bằng thép và giấy.</li><li><strong>Cách làm:</strong> đặt kẹp giấy lên bàn, đưa nam châm lại gần từ từ và quan sát lực hút.</li><li><strong>Ghi nhận:</strong> thử thay đổi khoảng cách; so sánh với một vật không bị nam châm hút rõ rệt như miếng nhôm.</li><li><strong>Giải thích:</strong> cobalt nguyên chất là vật liệu sắt từ, cùng với sắt và nickel. Thí nghiệm nam châm thông thường minh họa tính từ; kẹp giấy thép không phải cobalt nguyên chất.</li></ul><div class="note"><b>Không làm:</b> không dùng bột cobalt, hóa chất cobalt hoặc nguồn phóng xạ cobalt-60. Giữ nam châm mạnh tránh xa thiết bị điện tử và người có thiết bị y tế cấy ghép theo hướng dẫn của nhà sản xuất.</div></div>
+  </div>
+</section>
+<section id="quiz">
+  <div class="section-head"><div><div class="tag">05 / Kiểm tra nhanh</div><h2>Thử thách kiến thức</h2><p>Chọn đáp án để nhận phản hồi ngay; câu hỏi tiếp theo sẽ thay đổi theo tiến trình của bạn.</p></div><span class="score" id="score">Điểm: 0 / 5</span></div>
+  <div class="panel">
+    <div class="small" id="questionCount">Câu 1 trên 5</div><p class="quiz-question" id="questionText"></p><div class="answers" id="answers"></div><div class="feedback" id="feedback" role="status"></div><div class="quiz-footer"><span class="small" id="quizHint">Gợi ý: nhớ số hiệu nguyên tử của Co.</span><button class="btn" id="nextBtn" disabled>Câu tiếp theo →</button></div>
+  </div>
+</section>
+</main>
+<footer>Trang học tập tương tác · Cobalt (Co), nguyên tố số 27. Dùng cho mục đích giáo dục; mô hình và hoạt cảnh là minh họa.</footer>
+<script>
+const scenes=[
+ {t:0,d:10,title:"Xin chào, Cobalt!",symbol:"Co",caption:"Cobalt, hay coban, là nguyên tố số 27 trong bảng tuần hoàn.",voice:"Xin chào! Mình là cobalt, hay còn gọi là coban. Mình có số hiệu nguyên tử 27 và nằm ở chu kì bốn, nhóm chín."},
+ {t:10,d:10,title:"Một kim loại đặc biệt",symbol:"27",caption:"Kim loại chuyển tiếp màu bạc ánh xanh, có tính sắt từ.",voice:"Ở dạng kim loại, cobalt có màu bạc ánh xanh. Cobalt là một trong số ít kim loại có tính sắt từ ở nhiệt độ phòng, giống như sắt và nickel."},
+ {t:20,d:10,title:"Bên trong nguyên tử",symbol:"27 p⁺",caption:"Nguyên tử trung hòa có 27 proton và 27 electron.",voice:"Một nguyên tử cobalt trung hòa có hai mươi bảy proton và hai mươi bảy electron. Đồng vị cobalt năm mươi chín phổ biến có ba mươi hai neutron."},
+ {t:30,d:10,title:"Năng lượng di động",symbol:"⚡ Co",caption:"Một số pin lithium-ion sử dụng hợp chất cobalt ở cực dương.",voice:"Cobalt được dùng trong một số loại pin lithium-ion. Hợp chất cobalt có thể giúp tăng độ ổn định và mật độ năng lượng, dù ngành pin cũng đang phát triển các công thức giảm hoặc không dùng cobalt."},
+ {t:40,d:10,title:"Y tế và vitamin B₁₂",symbol:"B₁₂",caption:"Cobalt nằm ở trung tâm phân tử vitamin B₁₂; cobalt-60 có ứng dụng chiếu xạ chuyên dụng.",voice:"Trong cơ thể, cobalt là một phần của vitamin B mười hai, cần cho tạo hồng cầu và hệ thần kinh. Đồng vị phóng xạ cobalt sáu mươi phát tia gamma và được sử dụng trong các ứng dụng y tế, công nghiệp có kiểm soát."},
+ {t:50,d:10,title:"Màu xanh & hợp kim",symbol:"🔷",caption:"Sắc tố xanh cobalt và hợp kim chịu nhiệt là hai ứng dụng nổi bật.",voice:"Các hợp chất cobalt tạo nên sắc xanh nổi tiếng trong thủy tinh và gốm. Cobalt cũng góp mặt trong những hợp kim chịu nhiệt, dùng ở môi trường khắc nghiệt."},
+ {t:60,d:15,title:"Nhớ điều quan trọng",symbol:"Co!",caption:"Cobalt hữu ích, nhưng bụi và nhiều hợp chất cobalt cần được xử lý an toàn.",voice:"Cobalt có nhiều giá trị, nhưng bụi kim loại và nhiều hợp chất cobalt có thể gây hại nếu xử lý sai cách. Không tự làm thí nghiệm với hóa chất cobalt hay nguồn phóng xạ. Đó là hành trình khám phá cobalt trong bảy mươi lăm giây!"}
+];
+let elapsed=0,playing=false,voiceOn=false,timer=null,sceneIndex=-1;
+const $=id=>document.getElementById(id);
+function fmt(s){return `00:${String(Math.floor(s)).padStart(2,'0')}`}
+function showScene(i){if(i===sceneIndex)return;sceneIndex=i;const s=scenes[i];$('sceneSymbol').textContent=s.symbol;$('sceneTitle').textContent=s.title;$('sceneCaption').textContent=s.caption;document.querySelectorAll('.script-item').forEach((el,j)=>el.classList.toggle('active',j===i));if(voiceOn&&'speechSynthesis'in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(s.voice);u.lang='vi-VN';u.rate=1.0;speechSynthesis.speak(u)}}
+function renderScripts(){$('scriptList').innerHTML=scenes.map((s,i)=>`<div class="script-item" tabindex="0" role="button" data-scene="${i}"><b>${fmt(s.t)} – ${fmt(s.t+s.d)}</b><p>${s.title}<br>${s.caption}</p></div>`).join('');document.querySelectorAll('.script-item').forEach(el=>{const go=()=>{pauseVideo();elapsed=scenes[+el.dataset.scene].t;tick(true)};el.addEventListener('click',go);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})}
+function tick(force=false){if(elapsed>=75){elapsed=75;pauseVideo();$('playBtn').textContent='▶ Phát lại';}const i=Math.min(scenes.length-1,scenes.findIndex(s=>elapsed>=s.t&&elapsed<s.t+s.d)===-1?scenes.length-1:scenes.findIndex(s=>elapsed>=s.t&&elapsed<s.t+s.d));showScene(i);$('progressBar').style.width=(elapsed/75*100)+'%';$('timeLabel').textContent=fmt(elapsed)+' / 01:15';if(elapsed===75){$('sceneTitle').textContent='Hoàn thành!';$('sceneCaption').textContent='Bạn đã khám phá những điểm chính về cobalt.'}}
+function pauseVideo(){playing=false;clearInterval(timer);timer=null;$('playBtn').textContent='▶ Tiếp tục';if('speechSynthesis'in window)speechSynthesis.pause()}
+function playVideo(){if(elapsed>=75){elapsed=0;sceneIndex=-1}playing=true;$('playBtn').textContent='Ⅱ Tạm dừng';if(voiceOn&&'speechSynthesis'in window)speechSynthesis.resume();tick(true);timer=setInterval(()=>{elapsed++;tick();if(elapsed>=75)clearInterval(timer)},1000)}
+$('playBtn').addEventListener('click',()=>playing?pauseVideo():playVideo());
+$('restartBtn').addEventListener('click',()=>{pauseVideo();elapsed=0;sceneIndex=-1;if('speechSynthesis'in window)speechSynthesis.cancel();tick(true);playVideo()});
+$('voiceBtn').addEventListener('click',()=>{voiceOn=!voiceOn;$('voiceBtn').textContent=voiceOn?'🔊 Tắt đọc lời dẫn':'🔊 Bật đọc lời dẫn';if(!voiceOn&&'speechSynthesis'in window)speechSynthesis.cancel();else if(playing)showScene(sceneIndex)});
+renderScripts();tick(true);
+let atomFast=false,atomPaused=false;const orbits=[...document.querySelectorAll('.orbit')];
+$('spinBtn').addEventListener('click',()=>{atomFast=!atomFast;orbits.forEach((o,i)=>o.style.animationDuration=(atomFast?`${Math.max(3,7+i*2)}s`:`${12+i*3}s`));$('spinBtn').textContent=atomFast?'⟳ Tốc độ bình thường':'⟳ Tăng tốc xoay'});
+$('pauseAtomBtn').addEventListener('click',()=>{atomPaused=!atomPaused;orbits.forEach(o=>o.style.animationPlayState=atomPaused?'paused':'running');$('pauseAtomBtn').textContent=atomPaused?'▶ Tiếp tục':'Ⅱ Tạm dừng'});
+const questions=[
+ {q:"Cobalt có số hiệu nguyên tử là bao nhiêu?",a:["17","27","29","36"],c:1,why:"Số hiệu nguyên tử bằng số proton trong hạt nhân. Cobalt có 27 proton."},
+ {q:"Cobalt nằm ở chu kì nào của bảng tuần hoàn?",a:["Chu kì 2","Chu kì 3","Chu kì 4","Chu kì 5"],c:2,why:"Cobalt thuộc chu kì 4 và nhóm 9."},
+ {q:"Cobalt là một phần của phân tử nào cần thiết cho tạo hồng cầu và chức năng thần kinh?",a:["Vitamin C","Vitamin B₁₂","Glucose","Hemoglobin không chứa cobalt"],c:1,why:"Vitamin B₁₂ có nguyên tử cobalt ở trung tâm cấu trúc phân tử."},
+ {q:"Ứng dụng nào dưới đây có liên quan đến cobalt-60?",a:["Tạo tia gamma trong thiết bị chuyên dụng","Làm nhiên liệu cho mọi loại xe","Lọc nước bằng cách uống cobalt","Tạo oxy trong không khí"],c:0,why:"Cobalt-60 là đồng vị phóng xạ phát tia gamma và chỉ được sử dụng trong cơ sở chuyên môn có kiểm soát."},
+ {q:"Cách nào an toàn nhất để tìm hiểu tính từ trong lớp học?",a:["Tự pha muối cobalt","Mở nguồn cobalt-60","Dùng nam châm thương mại nguyên vẹn với kẹp giấy thép","Đốt bột cobalt"],c:2,why:"Dùng nam châm thương mại và vật dụng thông thường giúp quan sát lực hút mà không cần xử lý cobalt hay nguồn phóng xạ."}
+];
+let qi=0,score=0,answered=false;
+function renderQuiz(){const q=questions[qi];$('questionCount').textContent=`Câu ${qi+1} trên ${questions.length}`;$('questionText').textContent=q.q;$('answers').innerHTML=q.a.map((a,i)=>`<button class="answer" data-answer="${i}">${String.fromCharCode(65+i)}. ${a}</button>`).join('');$('feedback').className='feedback';$('feedback').textContent='';$('nextBtn').disabled=true;$('nextBtn').textContent=qi===questions.length-1?'Xem kết quả':'Câu tiếp theo →';$('quizHint').textContent='Hãy chọn một đáp án.';answered=false;document.querySelectorAll('.answer').forEach(btn=>btn.addEventListener('click',()=>choose(+btn.dataset.answer)))}
+function choose(i){if(answered)return;answered=true;const q=questions[qi],buttons=[...document.querySelectorAll('.answer')];buttons.forEach((b,j)=>{b.disabled=true;if(j===q.c)b.classList.add('correct');if(j===i&&i!==q.c)b.classList.add('wrong')});if(i===q.c)score++;$('score').textContent=`Điểm: ${score} / ${questions.length}`;$('feedback').textContent=(i===q.c?'Chính xác! ':'Chưa đúng. ')+q.why;$('feedback').className='feedback show';$('feedback').style.background=i===q.c?'#103528':'#3a1d2a';$('nextBtn').disabled=false}
+$('nextBtn').addEventListener('click',()=>{if(!answered)return;if(qi<questions.length-1){qi++;renderQuiz()}else{$('questionText').textContent=`Bạn đạt ${score}/${questions.length} điểm!`;const message=score===5?'Xuất sắc — bạn đã nắm vững những điểm chính về cobalt.':score>=3?'Làm tốt lắm! Hãy xem lại các phần ứng dụng và mô hình nguyên tử để củng cố kiến thức.':'Hãy xem lại video và phần cấu tạo nguyên tử, rồi thử lại nhé.';$('answers').innerHTML=`<p>${message}</p><button class="btn" id="retryBtn">Làm lại bài quiz</button>`;$('feedback').className='feedback show';$('feedback').textContent='Hoàn thành thử thách.';$('nextBtn').disabled=true;$('quizHint').textContent='';$('retryBtn').addEventListener('click',()=>{qi=0;score=0;$('score').textContent='Điểm: 0 / 5';renderQuiz()})}});
+renderQuiz();
+</script>
+</body>
+</html>
